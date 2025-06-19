@@ -4,7 +4,7 @@ import google.generativeai as genai
 from fastapi.middleware.cors import CORSMiddleware
 
 
-genai.configure(api_key="AIzaSyAfwSscFYcUwKDzLAZu_frlFZw4rBQOuiY")
+genai.configure(api_key="AIzaSyAfwSscFYcUwKDzLAZu_frlFZw4rBQiY")
 model = genai.GenerativeModel(model_name="models/gemini-1.5-flash")
 
 
