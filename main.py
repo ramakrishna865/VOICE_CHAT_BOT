@@ -20,14 +20,6 @@ app.add_middleware(
 class QuestionRequest(BaseModel):
     question: str
 
-# ✅ POST /ask - receive question, return answer
-# @app.post("/ask")
-# async def ask_gemini(request: QuestionRequest):
-#     try:
-#         response = model.generate_content(request.question)
-#         return {"answer": response.text}
-#     except Exception as e:
-#         return {"error": str(e)}
 
 @app.post("/ask")
 async def ask_gemini(request: QuestionRequest):
